@@ -1,6 +1,14 @@
 {
+  "name": "agentops-docs",
+  "version": "1.0.0",
+  "description": "AgentOps Documentation",
   "dependencies": {
-    "mintlify": "^3.0.78",
-    "posthog-js": "^1.130.2"
+    "mintlify": "^4.0.0",
+    "posthog-js": "^1.96.1"
+  },
+  "scripts": {
+    "dev": "mintlify dev",
+    "build": "mintlify build",
+    "preview": "mintlify preview"
   }
 }

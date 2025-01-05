@@ -167,3 +167,4 @@ agentops_time_travel.json
 .agentops_time_travel.yaml
 
 node_modules
+.codegpt

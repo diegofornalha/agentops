@@ -1,34 +1,54 @@
-# Mintlify Starter Kit
+# AgentOps Documentation
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+Este é o repositório da documentação do AgentOps, utilizando Mintlify para gerar a documentação.
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
-
-### 👩‍💻 Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+## 📁 Estrutura do Projeto
 
 ```
+docs/
+├── v1/                    # Documentação atual
+│   ├── concepts/         # Conceitos fundamentais
+│   ├── examples/         # Exemplos de uso
+│   ├── integrations/     # Integrações com outras ferramentas
+│   └── usage/           # Guias de uso
+├── images/               # Imagens e recursos visuais
+├── snippets/            # Trechos de código reutilizáveis
+└── mint.json            # Configuração do Mintlify
+```
+
+## 🚀 Desenvolvimento Local
+
+1. Instale o CLI do Mintlify:
+
+```bash
 npm i -g mintlify
 ```
 
-Run the following command at the root of your documentation (where mint.json is)
+2. Instale as dependências:
 
+```bash
+npm install
 ```
+
+3. Execute o servidor de desenvolvimento:
+
+```bash
 mintlify dev
 ```
 
-### 😎 Publishing Changes
+## 📝 Contribuindo
 
-Changes will be deployed to production automatically after pushing to the default branch.
+1. Atualize apenas os arquivos na pasta `v1/`
+2. Coloque imagens em `images/`
+3. Use snippets em `snippets/` para código reutilizável
+4. Teste localmente antes de fazer commit
 
-You can also preview changes using PRs, which generates a preview link of the docs.
+## 🔄 Deploy
 
-#### Troubleshooting
+O deploy é automático após push para a branch principal.
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+## 🔧 Troubleshooting
+
+- Se `mintlify dev` não funcionar, execute `mintlify install`
+- Se uma página carregar como 404, verifique se está no diretório com `mint.json`
+- Para problemas com imagens, verifique os caminhos em `mint.json`
